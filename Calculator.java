@@ -1,33 +1,21 @@
-package day9;
+package day16;
 
-public class Calculator {
+public class Calculator implements ICalculator {
 	
-	int add(int a, int b) {
-		//System.out.println("Addition"+ (a+b));
-		return a+b;
+	public int add(int a, int b) {
+		return a + b;
 	}
 	
-	int sub(int a, int b) {
-		return a-b;
+	public int sub(int a, int b) {
+		return a - b;
 	}
 	
-	int mul(int a, int b) {
-		return a*b;
+	public int mul(int a , int b) {
+		return a * b;
 	}
 	
-	int div(int a, int b) {
-		return a/b;
+	public int div(int a , int b) {
+		return a / b;
 	}
 
-	int mod(int a, int b) {
-		return a%b;
-	}
-	
-	
-			
-			
-			
-			
-		}
-
-
+}
