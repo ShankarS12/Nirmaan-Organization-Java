@@ -2,6 +2,7 @@ package day22;
 
 public class Book {
 	
+	private int id;
 	private String bookName;
 	private String author;
 	private double price;
@@ -10,13 +11,30 @@ public class Book {
 	public Book() {
 		
 	}
-
-	public Book(String bookName, String author, double price, int noOfCopies) {
+	
+	public Book(String bookName, String author, double price, int noOfCopies , int id) {
 		super();
 		this.bookName = bookName;
 		this.author = author;
 		this.price = price;
 		this.noOfCopies = noOfCopies;
+		this.id = id;
+	}
+
+	public Book(String bookName, String author, double price, int noOfCopies ) {
+		super();
+		this.bookName = bookName;
+		this.author = author;
+		this.price = price;
+		this.noOfCopies = noOfCopies;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	void setId(int id) {
+		this.id = id;
 	}
 
 	public String getBookName() {
